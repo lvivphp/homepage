@@ -3,16 +3,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Resume</title>
+    <title>My resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
     <style type="text/css">
       body {
-        padding-top: 20px;
+        padding-top: 30px;
         padding-bottom: 60px;
       }
 
@@ -80,23 +90,32 @@
 			text-decoration: none;
 			background-color: #000;
 		}
-    </style>
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
+    #experience .alert {
+      margin-bottom: 0;
+    }
+    #experience p {
+      margin: 20px 0 20px;
+    }
+    #contact li {
+      font-size: 24px;
+      margin: 10px 0 10px;
+    }
+    
+    #contact li i {
+      font-size: 36px;
+      vertical-align: middle;
+    }
+    #contact i:after {
+      content: "";
+    }
+    </style>
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-	  <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-      <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" style="visibility: visible;">
 
     <div class="container">
 
@@ -106,12 +125,12 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Bugs</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Games</a></li>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#games">Games</a></li>
               </ul>
             </div>
           </div>
@@ -119,39 +138,176 @@
       </div>
 
       <!-- Jumbotron -->
-      <div class="jumbotron">
+      <section id="home" class="jumbotron">
         <h1>Resume!</h1>
-        <p class="lead">— Hi! I’m skilled backend developer with 5 years of experience, application development, and database modeling.</p>
-        <a class="btn btn-large btn-success" href="#">Get started today</a>
-      </div>
+        <br>
+        <div class="row-fluid">
+            <div class="span3">
+              <img src="assets/img/avatar.png"/>
+            </div>
+            <div class="span9">
+                <p class="lead">— Hi! I’m skilled backend developer with 5 years of experience, application development, and database modeling.</p>
+                <p class="lead">And I like my work:)</p>
+            </div>
+          </div>
+      </section>
 
       <hr>
 
       <!-- Example row of columns -->
-      <div class="row-fluid">
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+      <section id="about">
+        <div class="page-header">
+          <h1>2. About</h1>
         </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
+        <div class="row-fluid">
+            <div class="span4">
+              <h2>Skills</h2>
+              <br>
+              <ul>
+                  <li>&#9632; PHP (PHP, Yii2, CakePHP, Laravel, Wordpress and other)</li>
+                  <li>&#9632; JavaScript (Javascript, NodeJs, ExpressJs, AngularJs, jQuery, js-plugins and other)</li>
+                  <li>&#9632; DB (MySQL, MongoDb)</li>
+                  <li>&#9632; HTML, CSS (Bootstrap)</li>
+                  <li>&#9632; QA Test Automation</li>
+                  <li>&#9632; Composer, GIT, LAMP, Docker, Ubuntu, VirtualBox</li>
+                  <li>&#9632; cPanel, DNS, configure servers</li>
+                  <li>&#9632; Other languages Java, Python, Visual Basic, Delphi.</li>
+              </ul>
+            </div>
+            <div class="span4">
+              <h2>Languages</h2>
+              <br>
+              <ul>
+                  <li>&#9632; Ukraine - native</li>
+                  <li>&#9632; English - medium</li>
+                  <li>&#9632; Russian - medium</li>
+                  <li>&#9632; Polish - elementary</li>
+              </ul>
+           </div>
+            <div class="span4">
+              <h2>Character</h2>
+              <br>
+              <ul>
+                  <li>&#9632; Responsible</li>
+                  <li>&#9632; Sociable</li>
+                  <li>&#9632; Energetic</li>
+                  <li>&#9632; Fast learn new</li>
+                  <li>&#9632; Can teach others</li>
+                  <li>&#9632; Execution of non-standard solutions</li>
+                  <li>&#9632; an independently study another programming language</li>
+              </ul>
+            </div>
+          </div>
+      </section>
 
       <hr>
 
-	  <iframe src="https://jsnes.org/run/Super%20Mario%20Bros.%20(JU)%20(PRG0)%20[!].nes" width="100%" height="600px"></iframe>
-	  
+      <section id="experience">
+          <div class="page-header">
+            <h1>3. Experience</h1>
+          </div>
+          <ul>
+              <li>
+                <div class="alert alert-warning">
+                  <strong>2009 Web admin and developer site</strong>
+                </div>
+                <div class="alert alert-success">
+                  <p>Site administrator, function writing, plugins, design processing.</p>
+                </div>
+              </li>
+              <li class="text-center"><p>&#9672;</p></li>
+              <li>
+                <div class="alert alert-warning">
+                  <strong>2013 PHP programmer</strong>
+                </div>
+                <div class="alert alert-success">
+                  <p>Creating sites on CMS (modx, opencart, wordpress, ...), writing code for already finished sites.</p>
+                </div>
+              </li>
+              <li class="text-center"><p>&#9672;</p></li>
+              <li><div class="alert alert-warning">
+                  <strong>2016 Web Developer</strong>
+                </div>
+                <div class="alert alert-success">
+                  <p>Write plugins for WP, write finance site on Laravel, CakePHP, update and develop site on php, write
+                      parsers, create db (mySQL), write plugins for piwik, write js code with use js plugings, front-end,
+                      implementation of unstandard solutions, GIT.</p>
+                </div>
+              </li>
+              <li class="text-center"><p>&#9672;</p></li>
+              <li>
+                <div class="alert alert-warning">
+                  <strong>2017 NodeJsDeveloper</strong>
+                </div>
+                <div class="alert alert-success">
+                  <p>Write websocket-app for site on Express.Js with MongoDb in back-end and AngularJs in front-end.</p>
+                </div>
+              </li>
+          </ul>
+
+        </section>
+        <hr>
+        <section id="features">
+            <div class="page-header">
+              <h1>4. Features</h1>
+            </div>
+            <div class="row-fluid">
+                <div class="span6">
+                  <h2>Likes</h2>
+                  <br>
+                  <ul>
+                      <li>&#9632; Nice people</li>
+                      <li>&#9632; Animals</li>
+                      <li>&#9632; Nature</li>
+                      <li>&#9632; Sport</li>
+                      <li>&#9632; Women</li>
+                      <li>&#9632; Delicious food</li>
+                      <li>&#9632; My work</li>
+                      <li>&#9632; Nice code (PSR).</li>
+                  </ul>
+                </div>
+                <div class="span6">
+                  <h2>Dislikes</h2>
+                  <br>
+                  <ul>
+                      <li>&#9632; Bad people</li>
+                      <li>&#9632; Smoking</li>
+                      <li>&#9632; High alcohol consumption</li>
+                      <li>&#9632; Injustice</li>
+                      <li>&#9632; Stupid games</li>
+                      <li>&#9632; To do nothing</li>
+                      <li>&#9632; Bad code</li>
+                  </ul>
+               </div>
+            </div>
+        </section>
+        <hr>
+        <section id="contact">
+            <div class="page-header">
+              <h1>5. Conatct</h1>
+            </div>
+            <ul>
+                <li><a href="#"><i class="fa fa-user"></i> LvivPHP</a></li></li>
+                <li><a href="#"><i class="fa fa-map-marker"></i> Ukraiane, city Lviv</a></li>
+                <li><a href="https://lvivphp.github.io/homepage/#" target="_blank"><i class="fa fa-link"></i> lvivphp.github.io/homepage</a></li>
+                <li><a href="tel:+380991234567" target="_blank"><i class="fa fa-phone-square"></i> +380 (99) 123-45-67</a></li>
+                <li><a href="mailto:webdeveloper.eu@gmail.com" target="_blank"><i class="fa fa-envelope"></i> webdeveloper.eu@gmail.com</a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i> Linkedin</a></li>
+                <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </section>
+        <hr>
+        <section id="games">
+            <div class="page-header">
+              <h1>6. Games</h1>
+            </div>
+            <iframe src="https://jsnes.org/run/Super%20Mario%20Bros.%20(JU)%20(PRG0)%20[!].nes" width="100%" height="600px"></iframe>
+        </section>
+        <hr>
       <div class="footer">
-        <p>&copy; All lvivphp 2018</p>
+        <p>&copy; All LvivPHP 2018</p>
       </div>
 
     </div> <!-- /container -->
@@ -160,6 +316,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-386.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
     <script src="assets/js/bootstrap-alert.js"></script>
     <script src="assets/js/bootstrap-modal.js"></script>
@@ -172,6 +329,10 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/application.js"></script>
 
   </body>
 </html>
